@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>tomcatPractice1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>tomcatPractice1.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/HelloServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BarServlet</servlet-name>
+    <servlet-class>tomcatPractice1.foo.BarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BarServlet</servlet-name>
+    <url-pattern>/BarServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>OracleServlet</servlet-name>
+    <servlet-class>tomcatPractice1.OracleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OracleServlet</servlet-name>
+    <url-pattern>/OracleServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>NowServlet</servlet-name>
+    <servlet-class>tomcatPractice1.foo.NowServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NowServlet</servlet-name>
+    <url-pattern>/NowServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HelloHtmlServlet</servlet-name>
+    <servlet-class>tomcatPractice1.HelloHtmlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloHtmlServlet</servlet-name>
+    <url-pattern>/HelloHtmlServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HelloTextServlet</servlet-name>
+    <servlet-class>tomcatPractice1.HelloTextServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloTextServlet</servlet-name>
+    <url-pattern>/HelloTextServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>OmojanServlet</servlet-name>
+    <servlet-class>tomcatPractice1.foo.OmojanServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OmojanServlet</servlet-name>
+    <url-pattern>/OmojanServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
